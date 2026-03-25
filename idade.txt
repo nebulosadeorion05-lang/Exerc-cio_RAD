@@ -1,1 +1,13 @@
-
+from datetime import datetime
+nome = input("Nome: ")
+rg = input("RG: ")
+cpf = input("CPF: ")
+ano = int(input("Ano de Nascimento: "))
+    
+idade = datetime.now().year - ano
+    
+with open("idade.txt") as arquivo:
+    arquivo.write(f"Nome: {nome}\n")
+    arquivo.write(f"RG: {rg}\n")
+    arquivo.write(f"CPF: {cpf}\n")
+    arquivo.write(f"Idade: {idade}\n")
