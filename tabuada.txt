@@ -1,6 +1,4 @@
-nome_arquivo = "tabuada.txt"
-
-with open(nome_arquivo, "w") as arquivo:
+with open("tabuada.txt", "w") as arquivo:
     arquivo.write("Tabuada do 9\n")
     
     for i in range(1, 11):
