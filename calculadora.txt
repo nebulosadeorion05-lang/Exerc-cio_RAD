@@ -1,1 +1,12 @@
+a = int(input("Insira o primeiro número: "))
+b = int(input("Insira o segundo número : "))
+    
+with open("calculadora.txt", "w") as arquivo:
+    arquivo.write(f"Soma: {a+b}\n")
+    arquivo.write(f"Subtração: {a-b}\n")
+    arquivo.write(f"Multiplicação: {a*b}\n")
 
+if b != 0:
+    arquivo.write(f"Divisão: {a/b}\n")
+else:
+    arquivo.write(f"Divisão: Impossível(divisão poir zero)\n")
