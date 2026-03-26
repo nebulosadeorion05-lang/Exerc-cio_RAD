@@ -1,1 +1,9 @@
+open("sem_palavras_repetidas.txt", "r") as arquivo:
+  frase = arquivo.read()
 
+palavras = frase.split()
+
+lista_sem_repeticao = []
+
+for string in palavras:
+  if string not in lista_sem_repeticao:
