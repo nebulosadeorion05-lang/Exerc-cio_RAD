@@ -1,4 +1,13 @@
-with open("lista.txt", "r") as arquivo:
-  linhas = arquivo.readlines()
+with open("lista.txt", "w") as arquivo:
+  arquivo.write("sol lua terra marte lua terra saturno marte sol venus terra saturno sol venus")
 
-print(linhas)
+with open("lista.txt", "r") as arquivo:
+  palavras = arquivo.read().split()
+
+lista_sem_repeticao = []
+
+for string in palavras:
+  if string not in lista_sem_repeticao:
+    lista_sem_repeticao.append(string)
+
+print(lista_sem_repeticao)
