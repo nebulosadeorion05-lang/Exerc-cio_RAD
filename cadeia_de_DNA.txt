@@ -1,5 +1,5 @@
 with open("cadeia_de_DNA", "w") as arquivo:
-    arquivo.write("ATCGATTC")
+    arquivo.write("GTCGATAA")
 
 with open("cadeia_de_DNA", "r") as arquivo:
     dna = arquivo.read().strip()
