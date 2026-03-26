@@ -1,1 +1,7 @@
+with open("cadeia_de_DNA", "r") as arquivo:
+    dna = arquivo.read().strip()
+    
+iverso = dna[::-1]
 
+print("A cadeia de DNA original é:\n", dna)
+print("A cadeia invertida de DNA é: ", inverso)
