@@ -1,1 +1,9 @@
+with open("substituir_por_underline.txt", "w") as arquivo:
+  arquivo.write("Um pequeno passo para o homem mas um grande salto para a humanidade")
 
+with open("substituir_por_underline.txt", "w") as arquivo:
+  frase = arquivo.read()
+
+frase_nova = frase.replace("","_")
+
+print("frase_nova")
